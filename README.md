@@ -100,18 +100,6 @@ pytest  ·  Playwright  ·  mypy (strict)  ·  SonarQube  ·  Sentry
 
 ---
 
-### 📊 Activity
-
-<div align="center">
-
-![](https://github-readme-stats.vercel.app/api?username=CristianMz21&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true)
-
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=CristianMz21&layout=compact&theme=tokyonight&hide_border=true&langs_count=8)
-
-</div>
-
----
-
 <div align="center">
 
 **Have a problem like these?** [Let's talk →](https://cristianarellano.com/#contact)
