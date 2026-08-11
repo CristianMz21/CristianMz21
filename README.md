@@ -17,8 +17,8 @@ I don't collect technologies — I solve problems and ship the fix to production
 
 <div align="center">
 
-![Tests](https://img.shields.io/badge/16,432_automated_tests-90.1%25_coverage-2ea44f?style=flat-square)
-![Fuzzing](https://img.shields.io/badge/93,952_fuzz_runs-0_vulnerabilities-blue?style=flat-square)
+![Tests](https://img.shields.io/badge/20,927_automated_tests-91.34%25_coverage-2ea44f?style=flat-square)
+![Fuzzing](https://img.shields.io/badge/150,108_fuzz_cases-run_nightly-blue?style=flat-square)
 ![Quality](https://img.shields.io/badge/SonarQube-Reliability_A_·_Security_A-orange?style=flat-square)
 ![Certs](https://img.shields.io/badge/55%2B_certifications-Meta_·_Microsoft_·_IBM_·_Google-8A2BE2?style=flat-square)
 
@@ -41,7 +41,7 @@ Integrated **DIAN electronic invoicing** through the Factus API — invoices gen
 Profiled the ORM, added composite indexes and query projections: **90% fewer database hits** on complex lookups. Verified with performance tests, not vibes.
 
 **🛡️ "How do you trust a codebase?"**
-You test it like an attacker: **16,432 automated tests (90.1% coverage)** plus **93,952 API fuzzing tests → 0 vulnerabilities across 169 endpoints**. SonarQube rates it Reliability A / Security A. Quality is not a promise here — it's a number.
+You test it like an attacker: **20,927 automated tests at 91.34% line coverage**, over a 90% floor the pipeline enforces, plus a **nightly CATS suite that throws 150,108 fuzz cases at the API**. SonarQube rates it Reliability A / Security A. The fuzzer is not decoration — the latest run is red on 633 findings, 80 of them 5xx responses to malformed input, and they are being worked. Quality is not a promise here — it is a number, including when the number is inconvenient.
 
 **🔌 "Frontend and backend always drift apart."**
 Killed the drift: the React storefront consumes a **typed SDK auto-generated from the OpenAPI spec** — if the API changes, the build breaks before the user notices. A **pre-push gate** (lint → typecheck → tests → build → bundle budget → e2e smoke) mirrors CI locally: red gate, no push. → [shop.cristianarellano.com](https://shop.cristianarellano.com/)
