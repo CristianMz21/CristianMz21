@@ -53,7 +53,7 @@ Built Python apps and **ETL pipelines from CRM and POS platforms** to digitalize
 Automated monitoring, alerts and backup validation with **Python + Bash**, hardened servers and managed access control — operational continuity without a night shift.
 
 **🤖 "ATS scores are a black box."**
-Built the opposite: a **deterministic, explainable CV-scoring engine** with hand-written Spanish NLP (Jaro-Winkler, Levenshtein, stemming, cascade matching) — no LLM decides the number, every score is reproducible. 1,389 test methods across four per-layer test projects, 0 skipped, 0 TODOs in 327 source files. → [BuildCv](https://github.com/buildcv-co)
+Built the opposite: a **deterministic, explainable CV-scoring engine** — six weighted sections, a whole-string match first and a curated alias lexicon only when that misses, and no language model anywhere in the score. Every suggestion re-runs the formula with one gap closed and reports the measured delta. 1,389 test methods across four per-layer test projects, 0 skipped, 0 TODOs in 327 source files. → [buildcv-v2](https://github.com/CristianMz21/buildcv-v2) · [live](https://buildcv.cristianarellano.com)
 
 ---
 
