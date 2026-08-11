@@ -2,7 +2,7 @@
 
 # Cristian Arellano Muñoz
 
-### Backend Developer · Python/Django · Full-Stack (React · .NET)
+### Fullstack Engineer · Python & .NET
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-cristianarellano.com-f97316?style=for-the-badge)](https://cristianarellano.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-czaidarellanomunoz-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/czaidarellanomunoz)
@@ -53,7 +53,7 @@ Built Python apps and **ETL pipelines from CRM and POS platforms** to digitalize
 Automated monitoring, alerts and backup validation with **Python + Bash**, hardened servers and managed access control — operational continuity without a night shift.
 
 **🤖 "ATS scores are a black box."**
-Built the opposite: a **deterministic, explainable CV-scoring engine** with hand-written Spanish NLP (Jaro-Winkler, Levenshtein, stemming, cascade matching) — no LLM decides the number, every score is reproducible. 92 tests, 0 build warnings. → [BuildCv](https://github.com/buildcv-co)
+Built the opposite: a **deterministic, explainable CV-scoring engine** with hand-written Spanish NLP (Jaro-Winkler, Levenshtein, stemming, cascade matching) — no LLM decides the number, every score is reproducible. 1,389 test methods across four per-layer test projects, 0 skipped, 0 TODOs in 327 source files. → [BuildCv](https://github.com/buildcv-co)
 
 ---
 
@@ -85,7 +85,7 @@ pytest  ·  Playwright  ·  mypy (strict)  ·  SonarQube  ·  Sentry
 
 | Project | What it solves | Stack |
 |---|---|---|
-| [**Prescription Management**](https://github.com/CristianMz21/prescriptions-app-backend) | Paper prescriptions → digital flow with doctor/patient roles and PDF output · [live](https://prescriptions-app-eight.vercel.app) | NestJS · Prisma · PostgreSQL |
+| [**Prescription Management**](https://github.com/CristianMz21/prescriptions-app-backend) | Paper prescriptions → digital flow with doctor/patient roles and PDF output | NestJS · Prisma · PostgreSQL |
 | [**ecommerce-api**](https://github.com/CristianMz21/ecommerce-api) | REST API with smart Redis cache invalidation — mypy strict, 0 errors, 28/28 tests | Django · DRF · Redis |
 | [**Sistema de Reservas**](https://github.com/CristianMz21/Sistema-de-Reservas-de-Eventos-Masivos) | Mass-event ticketing with multi-role JWT auth | Django · DRF · PostgreSQL |
 | [**JobsColombia**](https://github.com/CristianMz21/JobsColombia) | Classifies and scores tech job postings for the Colombian market | Python · pandas |
