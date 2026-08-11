@@ -13,7 +13,7 @@
 
 ---
 
-I don't collect technologies — I solve problems and ship the fix to production. Everything below is real, tested and public.
+I don't collect technologies — I solve problems and ship the fix to production. Everything below is real and running in production. Where a repository is private it is commercial code, and the live product or a written case study is linked in its place.
 
 <div align="center">
 
@@ -32,7 +32,7 @@ I don't collect technologies — I solve problems and ship the fix to production
 ### 🔧 Real problems → shipped solutions
 
 **💳 "A payment can never be lost, even if the server dies mid-checkout."**
-Built a checkout **Saga orchestrator with the Outbox pattern** over Stripe Connect and Wompi: every step is recoverable, every event is delivered. No lost orders, no double charges. → [Ecomerce](https://github.com/CristianMz21/Ecomerce)
+Built a checkout **Saga orchestrator with the Outbox pattern** over Stripe Connect and Wompi: every step is recoverable, every event is delivered. No lost orders, no double charges. → [case study](https://cristianarellano.com/shoppipai/)
 
 **🧾 "Selling online in Colombia requires legal e-invoicing."**
 Integrated **DIAN electronic invoicing** through the Factus API — invoices generated and reported automatically on every sale. A legal requirement most portfolio projects ignore, solved end-to-end.
@@ -44,7 +44,7 @@ Profiled the ORM, added composite indexes and query projections: **90% fewer dat
 You test it like an attacker: **16,432 automated tests (90.1% coverage)** plus **93,952 API fuzzing tests → 0 vulnerabilities across 169 endpoints**. SonarQube rates it Reliability A / Security A. Quality is not a promise here — it's a number.
 
 **🔌 "Frontend and backend always drift apart."**
-Killed the drift: the React storefront consumes a **typed SDK auto-generated from the OpenAPI spec** — if the API changes, the build breaks before the user notices. A **pre-push gate** (lint → typecheck → tests → build → bundle budget → e2e smoke) mirrors CI locally: red gate, no push. → [shoppipai-frontend](https://github.com/CristianMz21/shoppipai-frontend)
+Killed the drift: the React storefront consumes a **typed SDK auto-generated from the OpenAPI spec** — if the API changes, the build breaks before the user notices. A **pre-push gate** (lint → typecheck → tests → build → bundle budget → e2e smoke) mirrors CI locally: red gate, no push. → [shop.cristianarellano.com](https://shop.cristianarellano.com/)
 
 **📦 "Inventory lived in spreadsheets and memory."** *(Tigo Colombia)*
 Built Python apps and **ETL pipelines from CRM and POS platforms** to digitalize inventory control; the rotation reports they produced drove real logistics decisions.
@@ -73,13 +73,14 @@ pytest  ·  Playwright  ·  mypy (strict)  ·  SonarQube  ·  Sentry
 
 ### 🚀 Projects
 
-**The Shoppipai ecosystem** — one product, three codebases, built end-to-end:
+**The Shoppipai ecosystem** — one product, three codebases, built end-to-end. It is a commercial product, so the
+repositories are private; each row links to the thing you can actually open.
 
-| Repo | What it solves | Stack |
+| Component | What it solves | Stack |
 |---|---|---|
-| [**Ecomerce**](https://github.com/CristianMz21/Ecomerce) | The backend above: payments, e-invoicing, RAG search, 27 DDD bounded contexts | Django 5.2 · PostgreSQL · Redis |
-| [**shoppipai-frontend**](https://github.com/CristianMz21/shoppipai-frontend) | Storefront with typed SDK + pre-push quality gate | React 19 · Vite · TS strict |
-| [**dashboardEcomerce**](https://github.com/CristianMz21/dashboardEcomerce) | Ops visibility: 18+ admin modules, RBAC, Kanban orders · [live demo](https://dashboard-ecomerce-mu.vercel.app) | Next.js 16 · NextAuth v5 |
+| **Backend** — [case study](https://cristianarellano.com/shoppipai/) | Payments, e-invoicing, RAG search, 27 DDD bounded contexts | Django 5.2 · PostgreSQL · Redis |
+| **Storefront** — [shop.cristianarellano.com](https://shop.cristianarellano.com/) | Typed SDK generated from the OpenAPI spec, plus a pre-push quality gate | React 19 · Vite · TS strict |
+| **Ops dashboard** — client access only | 18+ admin modules, RBAC, Kanban orders | Next.js 16 · NextAuth v5 |
 
 **More:**
 
